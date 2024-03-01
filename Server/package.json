@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.3",
+    "nodemon": "^3.1.0",
+    "pg": "^8.11.3"
+  },
+  "name": "todos-server",
+  "version": "1.0.0",
+  "description": "server folder for todos using expressjs and postgresql",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon script.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prathmesh-ka-github/TODOs-list.git"
+  },
+  "author": "prathmesh-ka-github",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prathmesh-ka-github/TODOs-list/issues"
+  },
+  "homepage": "https://github.com/prathmesh-ka-github/TODOs-list#readme"
+}
