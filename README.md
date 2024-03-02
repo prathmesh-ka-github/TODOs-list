@@ -24,5 +24,5 @@ Learn the PERN stack in this full tutorial course for beginners. The PERN stack 
 >    - put endpoints for updating data in the DB.
 >    - delete endpoint for deleting specifc rows in the DB.
 > - Restful api overview.
-> - Setting up client side ReactJS app.
+> - Setting up client side ReactJS app powered by VITE.
 > - Building the client side ReactJS app.
