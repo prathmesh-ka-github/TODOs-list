@@ -26,3 +26,6 @@ Learn the PERN stack in this full tutorial course for beginners. The PERN stack 
 > - Restful api overview.
 > - Setting up client side ReactJS app powered by VITE.
 > - Building the client side ReactJS app.
+>   - Create functions using fetch api method = post.
+>   - Read functions using fetch api.
+>   - Delete functions using fetch api method = delete.
