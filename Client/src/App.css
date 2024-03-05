@@ -120,7 +120,7 @@ input[type="checkbox"] {
     transform: translateY(0.200em);
     display: grid;
     place-content: center;
-  
+    cursor: pointer;
 }
 
 input[type="checkbox"]::before {

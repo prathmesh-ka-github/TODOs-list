@@ -1,4 +1,5 @@
 import React, { Fragment, useEffect, useState } from 'react';
+import EditTodo from './editTodo'
 
 const listTodos = () => {
 
@@ -56,7 +57,7 @@ const listTodos = () => {
                                 <td><input onClick={() => crossTodo(todo.todoid)} type="checkbox" name="chk-box" /></td>
 
                                 <td id={todo.todoid} >{todo.dsc}</td>
-                                <td> <button className='edit-btn'>Edit</button></td>
+                                <td> <div ><EditTodo todo={todo}/></div></td>
                                 <td> <button className='delete-btn' onClick={() => deleteTodo(todo.todoid)}>Delete</button></td>
                             </tr>
                         ))}
