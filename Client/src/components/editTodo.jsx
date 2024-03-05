@@ -16,6 +16,7 @@ const editTodo = ({todo}) => {
         var modal = document.getElementById(`id${todo.todoid}`)
         modal.classList.toggle('visible')
         console.log('closed')
+        setDescription(todo.dsc)
     } 
 
     const updateDescription = async () => {
