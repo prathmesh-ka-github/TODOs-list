@@ -15,7 +15,7 @@ Learn the PERN stack in this full tutorial course for beginners. The PERN stack 
 In this application you can create a Todo, Read Todo list to display the todos, Update a Todo by editing it and Delete a Todo.  
 <br/>
 
-## Concepts learned from the course -
+# Concepts learned from the course -
 > - Drawing and Understanding overview diagrams. (ER diagrams.)
 > - Making a npm project and installing required dependencies.
 >   1. ExpressJS 4.18.3
