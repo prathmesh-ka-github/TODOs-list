@@ -19,6 +19,15 @@ const listTodos = () => {
         }
     }
 
+    const getTodos = async () => {
+        try {
+            const response = await fetch("http://localhost:5000/todos")
+            const jsonData = await response.json()
+            setTodos(jsonData);
+        } catch (err) {
+            console.error(err.message);
+        }
+    }
     useEffect(() => {
         getTodos();
     }, [])
@@ -37,7 +46,7 @@ const listTodos = () => {
                             <tr key={todo.todoid}>
                                 <td><input type="checkbox" name="chk-box" /></td>
                                 <td>{todo.dsc}</td>
-                                <td> <button id='edit-btn' >Edit</button></td>
+                                <td> <button id='edit-btn'>Edit</button></td>
                                 <td> <button id='delete-btn' onClick={() => deleteTodo(todo.todoid)}>Delete</button></td>
                             </tr>
                         ))}
