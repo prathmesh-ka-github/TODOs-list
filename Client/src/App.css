@@ -84,7 +84,7 @@ form {
     cursor: pointer;
 }
 
-#delete-btn {
+.delete-btn {
     all: unset;
     background-color: #df2020;
     height: 100;
@@ -92,12 +92,12 @@ form {
     transition: background-color 300ms;
     border-radius: 5px;
 }
-#delete-btn:hover {
+.delete-btn:hover {
     background-color: #bf1f1f;
 
 }
 
-#edit-btn {
+.edit-btn {
     all: unset;
     background-color: #ccc;
     color: black;
@@ -106,7 +106,7 @@ form {
     transition: background-color 300ms;
     border-radius: 5px;
 }
-#edit-btn:hover {
+.edit-btn:hover {
     background-color: #e5e5e5;
 }
 
@@ -130,24 +130,28 @@ input[type="checkbox"]::before {
     transform: scale(0);
     transition: 120ms transform ease-in-out;
     box-shadow: inset 1em 1em var(--form-control-color);
-  }
+}
 
-  input[type="checkbox"] {
-    /* ...existing styles */
-    display: grid;
-    place-content: center;
-  }
-  
-  input[type="checkbox"]::before {
-    content: "";
-    width: 1.3em;
-    height: 1.3em;
-    transform: scale(0);
-    transition: 100ms transform ease-in-out;
-    box-shadow: inset 0em 3em white;
-    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
-  }
-  
-  input[type="checkbox"]:checked::before {
-    transform: scale(1);
-  }
+input[type="checkbox"] {
+  /* ...existing styles */
+  display: grid;
+  place-content: center;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 1.3em;
+  height: 1.3em;
+  transform: scale(0);
+  transition: 100ms transform ease-in-out;
+  box-shadow: inset 0em 3em white;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+.slashed {
+    text-decoration: line-through;
+}

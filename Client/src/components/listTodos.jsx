@@ -4,8 +4,6 @@ const listTodos = () => {
 
     const [todos, setTodos] = useState([]);
 
-
-
     //! DELETE FUNCTION
     const deleteTodo = async (id) => {
         try {
@@ -32,6 +30,17 @@ const listTodos = () => {
         getTodos();
     }, [])
 
+    const crossTodo = async(id) => {
+        try {
+            let ele = document.getElementById(id)
+            ele.classList.toggle("slashed");
+            console.log(ele)
+
+        } catch (err) {
+            console.log(err.message)
+        }
+    }
+
     return (
         <Fragment>
             <div className='list-todo'>
@@ -44,25 +53,15 @@ const listTodos = () => {
                     <tbody>
                         {todos.map(todo => (
                             <tr key={todo.todoid}>
-                                <td><input type="checkbox" name="chk-box" /></td>
-                                <td>{todo.dsc}</td>
-                                <td> <button id='edit-btn'>Edit</button></td>
-                                <td> <button id='delete-btn' onClick={() => deleteTodo(todo.todoid)}>Delete</button></td>
+                                <td><input onClick={() => crossTodo(todo.todoid)} type="checkbox" name="chk-box" /></td>
+
+                                <td id={todo.todoid} >{todo.dsc}</td>
+                                <td> <button className='edit-btn'>Edit</button></td>
+                                <td> <button className='delete-btn' onClick={() => deleteTodo(todo.todoid)}>Delete</button></td>
                             </tr>
                         ))}
-
-                        {/* 
-                        <tr>
-                            <td><input type="checkbox" name="" id="" /></td>
-                            <td>I want to clean my car</td>
-                            <td> Edit</td>
-                            <td> delete</td>
-                        </tr> 
-                        */}
-
                     </tbody>
                 </table>
-
             </div>
         </Fragment>
     )
