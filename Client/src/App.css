@@ -67,10 +67,7 @@ form {
 }
 
 .list-todo tr {
-    /* all: unset; */
     margin: 10px 10px;
-    
-    
 }
 
 .list-todo thead th {
@@ -87,15 +84,70 @@ form {
     cursor: pointer;
 }
 
-.list-todo td button {
+#delete-btn {
     all: unset;
-    background-color: rgb(223, 32, 32);
+    background-color: #df2020;
     height: 100;
     padding: 8px;
     transition: background-color 300ms;
     border-radius: 5px;
 }
-.list-todo td button:hover {
-    background-color: rgb(191, 31, 31);
+#delete-btn:hover {
+    background-color: #bf1f1f;
 
 }
+
+#edit-btn {
+    all: unset;
+    background-color: #ccc;
+    color: black;
+    height: 100;
+    padding: 8px;
+    transition: background-color 300ms;
+    border-radius: 5px;
+}
+#edit-btn:hover {
+    background-color: #e5e5e5;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    color: currentColor;
+    width: 2.15em;
+    height: 2.15em;
+    border: 0.15em solid currentColor;
+    border-radius: 0.15em;
+    transform: translateY(0.200em);
+    display: grid;
+    place-content: center;
+  
+}
+
+input[type="checkbox"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+  }
+
+  input[type="checkbox"] {
+    /* ...existing styles */
+    display: grid;
+    place-content: center;
+  }
+  
+  input[type="checkbox"]::before {
+    content: "";
+    width: 1.3em;
+    height: 1.3em;
+    transform: scale(0);
+    transition: 100ms transform ease-in-out;
+    box-shadow: inset 0em 3em white;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  }
+  
+  input[type="checkbox"]:checked::before {
+    transform: scale(1);
+  }

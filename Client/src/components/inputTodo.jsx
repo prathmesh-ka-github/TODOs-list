@@ -18,11 +18,11 @@ const InputTodo = () => {
             } catch (err) {
                 console.error(err.message);
             }
+            window.location = '/'
         }
         else {
             console.warn("put something in the input!")
         }
-        window.location = '/'
     }
 
     
