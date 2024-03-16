@@ -4,7 +4,8 @@ This is a small, full stack project using
 - Postgres
 - ExpressJS
 - ReactJS
-- NodeJS
+- NodeJS  
+
 ![image](https://github.com/prathmesh-ka-github/TODOs-list/assets/103999608/406490a2-6b96-4a54-a7ff-971b53165351)
 
 ### From using the YouTube Course by [freeCodeCamp.org](https://youtu.be/ldYcgPKEZC8?si=c5aFCJF8BbPkQkz7)  
