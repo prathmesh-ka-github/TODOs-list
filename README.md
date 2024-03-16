@@ -54,10 +54,19 @@ Softwares required are -
 1. Open it in any IDE.
 1. Change directory to the Server folder and run this CLI command. 
 ```
+npm install express
+npm install nodemon
+npm install pg
+npm install cors
+
+//to run server
 npm run server
 ```    
 4. Open another terminal, Change directory to Client folder and run this CLI command.
 ```
+npm install vite
+
+//to run frontend
 npm run dev
 ```
 5. Now start the Postgresql Server using
